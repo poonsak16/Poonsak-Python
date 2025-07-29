@@ -22,8 +22,8 @@ def number_operations():
     print("Enter 10 numbers:")
     for i in range(10):
         # Your code here
-        pass
-    
+        numbers[i] = int(input("Enter number ["i + i "]: "))
+
     # Display original list
     print(f"Original numbers: {numbers}")
     
@@ -32,13 +32,29 @@ def number_operations():
     odd_numbers = # Your code here
     
     # Calculate average
-    average = # Your code here
+    average = sum(numbers) / len(numbers) # Your code here
     
     # Numbers greater than average
     above_average = # Your code here
-    
+
+    for i in range(10):
+        if numbers[i] % 2 == 0:
+            even_numbers.append(numbers[i])
+        else:
+            odd_numbers.append(numbers[i])
+
+        if number[i] > average:
+            above_average.append(number[i])
+
+            
     # Display results
     # Your code here
-
+    print("Even Numbers: ", even_numbers)
+    print("Odd Numbers: ", odd_numbers)
+    print("Above Average: ", above_average)
+    print("Sum: ", sum(numbers))
+    print("Average: ", average)
+    print("Min: ", min(numbers))
+    print("max: ", max(numbers))
 if __name__ == "__main__":
     number_operations()
