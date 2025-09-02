@@ -39,7 +39,7 @@ def personal_info_manager():
 
         elif choice == "4"
             person_list = list(person)
-            age = input("How old are you?: ")
+            age = int(input("How old are you?: "))
             person_list[1] = age
             person = tuple(person_list)
 
