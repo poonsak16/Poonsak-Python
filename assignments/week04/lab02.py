@@ -22,20 +22,21 @@ def number_operations():
     print("Enter 10 numbers:")
     for i in range(10):
         # Your code here
-        numbers[i] = int(input("Enter number ["i + i "]: "))
-
+        numbers[i] = int(input("Enter Number [" + i + "]:"))
+    
     # Display original list
     print(f"Original numbers: {numbers}")
     
+
     # Create filtered lists
-    even_numbers = # Your code here
-    odd_numbers = # Your code here
+    even_numbers = []
+    odd_numbers = []
     
     # Calculate average
-    average = sum(numbers) / len(numbers) # Your code here
+    average = sum(numbers) / len(numbers)
     
     # Numbers greater than average
-    above_average = # Your code here
+    above_average = [] 
 
     for i in range(10):
         if numbers[i] % 2 == 0:
@@ -43,10 +44,10 @@ def number_operations():
         else:
             odd_numbers.append(numbers[i])
 
-        if number[i] > average:
-            above_average.append(number[i])
-
-            
+        if numbers[i] > average:
+            above_average.append(numbers[i])
+        
+    
     # Display results
     # Your code here
     print("Even Numbers: ", even_numbers)
@@ -55,6 +56,8 @@ def number_operations():
     print("Sum: ", sum(numbers))
     print("Average: ", average)
     print("Min: ", min(numbers))
-    print("max: ", max(numbers))
+    print("Max: ", max(numbers))
+
+
 if __name__ == "__main__":
     number_operations()
