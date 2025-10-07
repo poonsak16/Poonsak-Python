@@ -22,4 +22,3 @@ Highest: 28 C
 Lowest: 19 C
 
 """
-    
